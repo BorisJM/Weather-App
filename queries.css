@@ -1,0 +1,10 @@
+@media (max-width: 53.125em) {
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .error-window {
+    width: 80%;
+  }
+}

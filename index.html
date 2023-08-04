@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="index.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="error-window">
+      <h1>Wrong City! Please try again</h1>
+    </div>
+    <div class="container">
+      <!-- <div class="empty"></div> -->
+      <div class="form-container">
+        <h1 class="heading-primary">Weather App</h1>
+        <form action="#">
+          <input type="text" placeholder="Enter city name" class="city-input" />
+          <div class="separation">
+            <hr />
+            <span>or</span>
+            <hr />
+          </div>
+          <button class="get-location" type="button">
+            Get Device Location
+          </button>
+        </form>
+      </div>
+      <div class="display-container">
+        <h1 class="heading-primary display-heading">
+          <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon
+          >Weather App
+        </h1>
+        <div class="weather-data">
+          <div class="current-weather">
+            <img src="./images/weather.png" alt="weather icon" />
+            <h2 class="heading-secondary">13&#176;C</h2>
+            <p class="weather-description">Broken Clouds</p>
+            <p class="location">
+              <ion-icon name="pin-outline" class="icon"></ion-icon>
+              <span class="country-city">Kathmandu, Nepal</span>
+            </p>
+          </div>
+          <div class="other-information">
+            <div class="first-col">
+              <ion-icon name="thermometer-outline" class="col-icon"></ion-icon>
+              <p><span class="feels-like">17&#176;C</span> Feels like</p>
+            </div>
+            <div class="second-col">
+              <ion-icon name="water-outline" class="col-icon"></ion-icon>
+              <p>
+                <span class="percentage"
+                  >84 <span class="percentage-symbol">%</span>
+                </span>
+                Humidlity
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

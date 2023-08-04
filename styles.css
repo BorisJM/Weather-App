@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(#1864ab, #74c0fc);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 65em;
+  margin: 0 auto;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.error-window {
+  position: absolute;
+  background-color: #fff;
+  color: #c92a2a;
+  top: 0;
+  right: 50%;
+  padding: 3rem 5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px #000;
+  transition: all 0.3s;
+  transform: translate(50%, -100%);
+}
+
+/* STYLING WHOLE FORM CONTAINER */
+/* --------------- */
+.form-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  grid-row: 2;
+  padding-bottom: 1.3rem;
+}
+
+.heading-primary {
+  color: #74c0fc;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #868e96;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1.6rem;
+  gap: 1.2rem;
+}
+
+.city-input {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  border: 1px solid #868e9683;
+  padding: 1rem 1.5rem;
+}
+
+.city-input.wrong-input {
+  outline: 1.5px solid #e03131;
+}
+
+.separation {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+hr {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #868e96;
+}
+
+.separation span {
+  color: #868e96;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.get-location {
+  background-color: #4dabf7;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* STYLING CONTAINER WITH WEATHER DATA */
+/* ------------------------- */
+.display-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  grid-row: span 2;
+}
+
+.display-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+  gap: 0.6rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.weather-description,
+.country-city {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.other-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #868e96;
+}
+
+.first-col {
+  border-right: 1px solid #868e96;
+}
+
+.first-col,
+.second-col {
+  display: flex;
+  padding: 1.1rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-col p,
+.second-col p {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-icon {
+  font-size: 45px;
+}
+
+.feels-like,
+.percentage {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.percentage-symbol {
+  font-weight: 500;
+}
